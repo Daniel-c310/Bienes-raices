@@ -192,7 +192,6 @@ img {
 .contenido-contacto {
   flex: 1; /*factor de crecimiento, toma el tama;o disponible 1000px/1 */
   color: white;
-
 }
 
 .contenido-contacto p {
