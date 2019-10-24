@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Bienes raices</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <header class="site-header inicio">
+    <div class="contenedor contenido-header">
+      <div class="barra">
+        <a href="index.html">
+          <img src="img/logo.svg" alt="Logotipo de bienes raices">
+        </a>
+        <nav class="navegacion">
+          <a href="nosotros.html">Nosotros</a>
+          <a href="anuncios.html">Anuncios</a>
+          <a href="blog.html">Blog</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+      </div>
+      <h1 class="titulo-header"> Ventas de casas y departamentos exclusivos de Lujo</h1>
+    </div> <!-- contenedor -->
+  </header>
+
+  <section class="contenedor seccion">
+    <h2 class="fw-300 centrar-texto"> Más Sobre Nosotros</h2>
+
+    <div class="iconos-nosotros">
+      <div class="icono">
+        <img src="img/icono1.svg" alt="Icono seguridad">
+        <h3>Seguridad</h3>
+        <p>Sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <div class="icono">
+          <img src="img/icono2.svg" alt="Icono mejor precio">
+          <h3>El Mejor Precio</h3>
+          <p>Sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+
+          <div class="icono">
+            <img src="img/icono3.svg" alt="Icono tiempo">
+            <h3>A Tiempo</h3>
+            <p>Sit amet, consectetur adipisicing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+              ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
+        </section>
+
+        <main class="seccion contenedor">
+          <h2 class="fw-300 centrar-texto">Casas y Depas en Venta</h2>
+
+          <div class="contenedor-anuncios">
+            <div class="anuncio">
+              <img src="img/anuncio1.jpg" alt="Casa de lujo lago">
+              <div class="contenido-anuncio">
+                <h3>Casa de Lujo en el Lago</h3>
+                <p>Casa en el lago con excelente vista, acabados de lujo con un excelente precios</p>
+                <p class="precio">$3,000,000</p>
+                <a href="#" class="boton boton-amarillo d-block">Ver propiedad</a>
+              </div>
+            </div>
+
+            <div class="anuncio">
+              <img src="img/anuncio2.jpg" alt="Casa terminados de lujo">
+              <div class="contenido-anuncio">
+                <h3>Casa terminados de Lujo</h3>
+                <p>Casa con diseño moderno, así como tegnología inteligente y amueblada</p>
+                <p class="precio">$2,000,000</p>
+                <a href="#" class="boton boton-amarillo d-block">Ver propiedad</a>
+              </div>
+            </div>
+
+            <div class="anuncio">
+              <img src="img/anuncio3.jpg" alt="Casa con alberca">
+              <div class="contenido-anuncio">
+                <h3>Casa con Alberca</h3>
+                <p>Casa con alberca y acabados de lujo en la ciudad excelente oportunidad</p>
+                <p class="precio">$3,000,000</p>
+                <a href="#" class="boton boton-amarillo d-block">Ver propiedad</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="ver-todas">
+            <a href="anuncios.html" class="boton boton-verde">Ver todas</a>
+          </div>
+        </main>
+
+        <section class="imagen-contacto">
+          <div class="contenedor contenido-contacto">
+            <h2>Encuentra la casa de tus sueños</h2>
+            <p>Llena la página de contacto y un asesor se pondra en contacto contigo en la brevedad</p>
+
+            <a href="contacto.html" class="boton boton-amarillo">Contactanos</a>
+          </div>
+        </section>
+
+        <section>
+          <h3>Nuestro Blog</h3>
+
+          <article class="">
+            <img src="img/blog1.jpg" alt="Entrada de blog">
+            <h4>Terraza en el techo de tu casa</h4>
+            <p>Escrito el: <em>21/10/2019</em> por: <em>Admin</em></p>
+            <p>Consejos para contruir una terraza en el techo de tu casa,
+              con los mejores materiales y ahorrando dinero</p>
+            </article>
+
+            <article class="">
+              <img src="img/blog2.jpg" alt="Guia para la decoración">
+              <h4>Guía para la decoración de tu hogar</h4>
+              <p>Escrito el: <em>21/10/2019</em> por: <em>Admin</em></p>
+              <p>Maximiza el espacio en tu hogar con esta guía, aprende a combinar
+                muebles y colores para darle vida a tu espacio</p>
+              </article>
+            </section>
+
+            <section>
+              <h3>Testimoniales</h3>
+              <header>
+                <p>Escrito por</p>
+              </header>
+              <blockquote cite="http://">
+                El personal se comportó de una excelente forma, muy buena atención,
+                y la casa que me ofrecieron cumple con todas mis expectativas.
+              </blockquote>
+              <p>- Daniel Casagallo</p>
+            </section>
+
+            <footer>
+              <nav class="navegacion">
+                <a href="nosotros.html">Nosotros</a>
+                <a href="anuncios.html">Anuncios</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacto.html">Contacto</a>
+              </nav>
+              <p>Todos los Derechos Reservados 2019 &copy</p>
+            </footer>
+
+
+            <script src="http://localhost:35729/livereload.js" type="text/javascript"></script>
+          </body>
+          </html>
