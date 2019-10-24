@@ -15,7 +15,7 @@ body{
 
 /*Globales*/
 
-.contenedor{
+.contenedor{ /*para centrar las secciones*/
   max-width: 120rem;
   margin: 0 auto;
 }
@@ -173,6 +173,21 @@ img {
   color: rgb(113, 222, 129);
 }
 
+.iconos-caracteristicas {
+  list-style: none; /*vi;etas o estilos de las vinetas*/
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.iconos-caracteristicas li {
+  display: flex;
+}
+
+.iconos-caracteristicas li img {
+  margin-right: 2rem; /*para la separacion entre los iconos y numeros*/
+}
+
 .ver-todas { /*para que el boton verde se posicione a la derecha*/
   display: flex;
   justify-content:flex-end;
@@ -190,10 +205,112 @@ img {
 }
 
 .contenido-contacto {
-  flex: 1; /*factor de crecimiento, toma el tama;o disponible 1000px/1 */
+  flex: 1; /*factor de crecimiento, toma el tama;o disponible 1000px/1 */ /*para que cada uno tome el tama;o que hay disponible*/
   color: white;
 }
 
 .contenido-contacto p {
   font-size: 1.8rem
+}
+
+.seccion-inferior {
+  display: flex;
+  justify-content: space-between;
+}
+
+.seccion-inferior .blog {
+  flex-basis: 60%;
+}
+
+.seccion-inferior .testimoniales {
+  flex-basis: calc(40% - 2rem)
+}
+
+.entrada-blog {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem; /*pone espacio entre los dos elementos dentro de la entrada del blog*/
+}
+
+.entrada-blog:last-of-type {
+  margin-bottom: 0; /*eminina el espacio del margin bottom en el ultimo elemento*/
+}
+
+.entrada-blog .imagen {
+  flex-basis: 40%;
+}
+
+.entrada-blog .texto-entrada {
+  flex-basis: calc(60% - 3rem);
+}
+
+.texto-entrada h4 {
+  margin: 0; /*eliminar margen de h4 para que suba el texto y se alinie*/
+  line-height: 2.5rem;
+}
+
+.texto-entrada a {
+  text-decoration: none;
+  color:rgb(247, 184, 10);
+}
+
+.texto-entrada h4::after { /*el after es para decir que cree el [seudoelemento despues del h4 para crear pseudoelementos creamos la barra*/
+  content: ''; /*para que no muestre ningun contenido*/
+  display: block; /*para que se cree un bloque y podamos darle las dimensiones*/
+  width: 15rem;
+  height: .5rem;
+  background-color: #71B100;
+  margin-top: 1rem; /*para separarle un poco de arriba*/
+}
+
+.texto-entrada span {
+  color: #E08709;
+}
+
+/*Testimoniales*/
+.testimonial {
+  background-color: #71B100;
+  font-size: 2.4rem;
+  padding: 2rem;
+  line-height: 3rem;
+  color: white;
+  border-radius: 2rem; /*Para dedondear las esquinas del cuadro verde*/
+}
+
+.testimonial p {
+  margin-top: 5rem;
+  text-align: right;
+}
+
+blockquote::before { /*para posicionar las comillas antes del texto esto se crea en un block*/
+  content: '';
+  background-image: url(../img/comilla.svg);
+  width: 4rem;
+  height: 4rem;
+  position: absolute; /*porque este es el hijo, este se va a mover*/
+  left: -2rem;
+}
+
+blockquote {
+  position: relative; /*este es el hijo, este se va a quedr quito y sera la referencia*/
+  padding-left: 5rem; /*se asigna el espacio que recore el texto hacia la derecha*/
+  font-weight: 300;
+}
+
+/*footer*/
+
+.site-footer {
+  background-color: #333333;
+  margin: 0;
+}
+
+.contenedor-footer {
+  padding: 3rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contenedor-footer p {
+  margin: 0;
+  color: white;
 }
