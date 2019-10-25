@@ -70,7 +70,7 @@ img {
   font-size: 1.8rem;
   padding: 1rem 3rem;
   margin-top: 3rem;
-  display: inline-block;
+  display: inline-block; /*al ser un enlace estos no poseen un display block las imagenes tampoco) y por eso no vale darle un ancho, o utilizar margin top para separar los botonespara eso se debe transformar en inline-block*/
   text-align: center;
 }
 
@@ -83,12 +83,17 @@ img {
 
 }
 /*Header */
+.site-header{
+  background-color: #333333;
+  padding: 1rem 0 3rem 0;
+}
+
 .site-header.inicio {
   background-image: url(../img/header.jpg);
   background-position: center;
   background-size: cover;
-  height: 100vh;
-  min-height: 60rem;
+  height: 100vh; /*para cubrir todo el espacio de la pantalla*/
+  min-height: 60rem; /*para cuando se le haga pequeña la pantalla cuando se arrastre hasta lo minimo */
 }
 
 .contenido-header{
@@ -136,7 +141,7 @@ img {
 }
 
 .icono {
-  flex-basis: calc(33.3% - 2rem);
+  flex-basis: calc(33.3% - 2rem); /*para que le agregue espaciado entre los divs*/
   text-align: center;
 }
 
@@ -194,7 +199,6 @@ img {
 }
 
 /*contacto home*/
-
 .imagen-contacto {
   background-image: url(../img/encuentra.jpg);
   background-position: center center;
@@ -313,4 +317,18 @@ blockquote {
 .contenedor-footer p {
   margin: 0;
   color: white;
+}
+
+/*INTERNAS*/
+.contenido-nosotros {
+  display: grid;
+  grid-template-columns: repeat(2,1fr); /* 50% 50% para dividir la seccion en dos partes iguales usando grid*/
+  grid-column-gap:2rem; /*para agregar separacion entre las fracciones o seciones de grid*/
+}
+
+.aiuda {
+  font-weight: 900;
+  font-size: 2rem;
+  margin: 0;
+  padding: 3rem 0;
 }
