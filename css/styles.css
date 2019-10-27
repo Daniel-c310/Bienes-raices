@@ -14,7 +14,6 @@ body{
 }
 
 /*Globales*/
-
 .contenedor{ /*para centrar las secciones*/
   max-width: 120rem;
   margin: 0 auto;
@@ -61,11 +60,11 @@ img {
 }
 
 .contenido-centrado {
-  max-width: 800;
+  max-width: 800px;
+  padding-top: 2rem;
 }
 
 /*Botones*/
-
 .boton {
   color: white;
   font-weight: 700;
@@ -155,7 +154,6 @@ img {
 }
 
 /* Anuncios */
-
 .contenedor-anuncios {
   display: flex;
   justify-content: space-between;
@@ -312,7 +310,6 @@ blockquote {
 }
 
 /*footer*/
-
 .site-footer {
   background-color: #333333;
   margin: 0;
