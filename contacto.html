@@ -25,66 +25,67 @@
       </div> <!-- contenedor -->
     </header>
 
-    <main class="contenedor">
-      <h1 class="fw-300 centrar-texto">Conoce Sobre Nosotros</h1>
-      <div class="contenido-nosotros">
-        <div class="imagen">
-          <img src="img/nosotros.jpg" alt="Imagen sobre nosotros">
-        </div>
-        <div class="texto-nosotros">
-          <p class="aiuda">25 Años de Experiencia </p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-            ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-            Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-            occaecat cupidatat non proident, sunt in culpa qui officia
-            deserunt mollit anim id est laborum.</p>
+    <h1 class="fw-300 centrar-texto"> Contacto</h1>
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-      </div>
+    <img src="img/destacada3.jpg" alt="Imegen Principal">
+
+    <main class="contenedor contenido seccion">
+
+      <h2 class="fw-300 centrar-texto">Llenar formulario de contacto</h2>
+
+      <form class="contacto" action="">
+
+        <fieldset>
+          <legend>Información personal</legend>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" placeholder="Tu nombre">
+
+          <label for="email">E-mail</label>
+          <input type="email" id="email" placeholder="Tu correo electrónico" required>
+
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" placeholder="Tu télefono" required>
+
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" placeholder="  Escribe algo..."></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend>Información sobre la propiedad</legend>
+          <label for="opciones">Vende o Compra</label>
+          <select class="" id="opciones">
+            <option value="" disabled selected>--Seleccione--</option>
+            <option value="compra">Compra</option>
+            <option value="vende">Vende</option>
+          </select>
+          <label for="cantidad">Catidad</label>
+          <input type="number" min="0" max="10">
+        </fieldset>
+
+        <fieldset>
+          <legend>Contacto</legend>
+          <p>Cómo desea ser contactado?</p>
+          <div class="forma-Contacto">
+            <label for="telefono">Télefono</label>
+            <input type="radio" id="telefono" name="contacto">
+
+            <label for="correo">E-mail</label>
+            <input type="radio" id="correo" name="contacto">
+          </div>
+
+          <p>Si elejioo teléfono elija a fecha y hora</p>
+
+          <label for="fecha">Fecha</label>
+          <input type="date" id="fecha">
+          <label for="hora">Hora</label>
+          <input type="time" id="hora" min="09:00" max="18:00">
+
+        </fieldset>
+
+        <input type="submit" value="Enviar" class="boton boton-verde">
+      </form>
+
     </main>
-
-    <section class="contenedor seccion">
-      <h2 class="fw-300 centrar-texto"> Más Sobre Nosotros</h2>
-
-      <div class="iconos-nosotros">
-        <div class="icono">
-          <img src="img/icono1.svg" alt="Icono seguridad">
-          <h3>Seguridad</h3>
-          <p>Sit amet, consectetur adipisicing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-
-        <div class="icono">
-          <img src="img/icono2.svg" alt="Icono mejor precio">
-          <h3>El Mejor Precio</h3>
-          <p>Sit amet, consectetur adipisicing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-
-        <div class="icono">
-          <img src="img/icono3.svg" alt="Icono tiempo">
-          <h3>A Tiempo</h3>
-          <p>Sit amet, consectetur adipisicing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-      </div>
-    </section>
 
     <footer class="site-footer seccion">
       <div class="contenedor contenedor-footer">
