@@ -15,7 +15,7 @@ body{
 
 /*Globales*/
 .contenedor{ /*para centrar las secciones*/
-  max-width: 80rem;
+  max-width: 100rem;
   margin: 0 auto;
 }
 
